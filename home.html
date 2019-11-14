@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- <link href="js/style.js" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <nav class="navbar-header">
+                  
+                       
+                <ul style="color:black">
+                    
+                    
+                    
+                    <li><a href="index.html">index</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="opportunities.html">Opportunity</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <!-- <li style="float:right"><a class="active" href="#home">Your dream partner in footboll </a></li> -->
+                </ul>             
+            </nav>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 style="text-align:center">welcome on WenaPlay. Create Your profile</h1>
+            <p style="text-align:center">Your profile that container all this information</p>
+            <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+         
+            <div class="row">
+            <div class="col-md-4">
+                
+             
+               
+                      <div class="form-group" name="myForm">
+                        <label for="new-number">Profile Photo</label>
+                    <input name="profile" type="text"  id="1" class="form-control" placeholder="choose photo" >
+                </div>  
+              
+                        
+                      <div class="form-group" name="myForm">
+                        <label for="new-number">Current Club</label>
+                    <input name="club" type="text"  id="1" class="form-control " placeholder="Enter your current club" >
+                </div>
+    
+                        
+                      <div class="form-group" name="myForm">
+                        <label for="new-number">Position</label>
+                    <input name="position" type="text"  id="1" class="form-control " placeholder="Defender/midfield/striker" >
+                </div>
+               
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                    <div class="form-group" name="myForm">
+                            <label for="new-number">Date of birth</label>
+                        <input name="date" type="calender"  id="1" class="form-control" placeholder="DD/MM/YY" >
+                    </div>
+                    <div class="form-group" name="myForm">
+                            <label for="new-number">league Name</label>
+                        <input name="league" type="text"  id="1" class="form-control new-number" placeholder="Enter the name of league" >
+                    </div>
+                    <div class="form-group" name="myForm">
+                        <label for="new-number">Personal summary (Max 200 words)</label>
+                    <input name="summary" type="text-area"  id="1" class="form-control " placeholder="Enter the name here your summary" >
+                </div>
+              
+            </div>
+        
+</div>
+
+<div class="row">
+<div class="col-md-3">
+    <p>Personal statement</p>
+        <p>Upload your video skills,max 100MBs</p>
+        <p>Formart:mov,.mp4,.avi,.mpg</p>
+    </div>
+    <div class="col-md-2" name="myForm"></div>
+    <div class="col-md-4">
+            <textarea name="personal" id="message" class="form-control" name="message" type="text" rows="4" style="background-color: transparent" placeholder="Type Your message..." required></textarea>
+    </div>
+</div>
+<div>
+        <p><button class="bt2">message</button></p>
+        <p>By registering you agree to our <br></p>
+        <p>Terms & Conditions</p>
+</div>
+         
+</form>
+</div>
+        </div>
+       
+       
+</body>
+<script>
+    function validate() {
+      
+      if( document.myForm.profile.value == "" ) {
+         alert( "Please provide your profilename!" );
+         document.myForm.profile.focus() ;
+         return false;
+      }
+      if( document.myForm.club.value == "" ) {
+         alert( "Please provide your club!" );
+         document.myForm.club.focus() ;
+         return false;
+      }
+      if( document.myForm.date.value == "" ) {
+         alert( "Please provide your date!" );
+         document.myForm.date.focus() ;
+         return false;
+      }
+      if( document.myForm.date.value == "" || isNaN( document.myForm.date.value ) ||
+         document.myForm.date.value.length != 5 ) {
+         
+         alert( "Please provide a date in the format MM/DD/YYYY." );
+         document.myForm.date.focus() ;
+         return false;
+      }
+      if( document.myForm.league.value == "-1" ) {
+         alert( "Please provide your league club!" );
+         return false;
+      }
+      if( document.myForm.summary.value == "-1" ) {
+         alert( "Please provide your summary!" );
+         return false;
+      }
+      if( document.myForm.position.value == "-1" ) {
+         alert( "Please provide your summary!" );
+         return false;
+      }
+      
+      return( true );
+   }
+
+</script>
+</html>

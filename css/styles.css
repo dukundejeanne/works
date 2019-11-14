@@ -1,0 +1,177 @@
+header{
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/drrezzrvd/image/upload/v1564580281/photo-2_pceoz5.jpg'); */
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/drrezzrvd/image/upload/v1573478717/patrick-tomasso-nWvWBV0sv04-unsplash_hciwno.jpg');
+    background-attachment: fixed;
+    background-repeat:no repeat;
+    height: 640px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.container-fluid {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:16px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .container1,footer,.container3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:16px;
+  }
+  /* .section2 > img{
+      width:30%;
+      
+  } */
+.section1 {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+  }
+ul{
+    list-style-type: none;
+margin:0px;
+padding: 0%;
+overflow: hidden;
+/* background-color: orangered; */
+}
+li{
+    float: right;
+}
+li a{
+    display:block;
+    color:grey;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+  
+ li a:hover:not(.active){
+     background-color: grey;
+     text-decoration: none;
+ }
+
+ footer{
+    height:400px;
+    background-color:grey;
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/drrezzrvd/image/upload/v1564657415/photo-6_xe18nn.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.section2,.row{
+    display: flex;
+    margin-top: 2%;
+
+} 
+.social{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+
+} 
+footer > p{
+    text-align: center;
+    color:white;
+}
+.sect2{
+    text-align: center;
+}
+.prf{
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+}
+.container2{
+    display: flex;
+}
+.sect1,.sect2,{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:16px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  .save{
+      text-align:center;
+  }
+  .bt3 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+    /* margin-left: 100px; */
+  }
+  .bt2 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    /* text-align: center; */
+    font-size: 18px;
+    /* margin-left: 100px; */
+  }
+  .bt1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    /* text-align: center; */
+    font-size: 18px;
+    margin-left: 100px;
+  }
+  .imgavatar{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 100px;
+    /* text-align: center; */
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .jumbotron{
+      width:60%;
+      /* text-align: center; */
+      margin-left: 20%;
+      color:black;
+  }
